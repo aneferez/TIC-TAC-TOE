@@ -1,18 +1,22 @@
-# React + Vite
+Tic-Tac-Toe Game - A classic two-player board game built with React and Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Key Features:
 
-Currently, two official plugins are available:
+Game Logic: Two-player gameplay (X vs O) with automatic winner detection
+Winner Detection: Checks all 8 possible winning combinations (rows, columns, diagonals)
+Draw Detection: Identifies when the game ends in a tie
+Game State: Tracks whose turn it is (alternates between X and O)
+Restart Functionality: Reset button to start a new game
+Visual Feedback: Displays current player and game status (winner/draw)
+Technology Stack:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Framework: React 19.2.0
+Build Tool: Vite 7.2.4 (fast development server & bundler)
+Styling: Custom CSS with animations and styling
+Development: ESLint for code quality, React Compiler enabled for optimizations
+Project Structure:
 
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3x3 grid board with clickable squares
+Reusable Square component for each cell
+Board component managing grid layout
+App component handling game state and logic
